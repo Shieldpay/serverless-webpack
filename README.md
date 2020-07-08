@@ -365,6 +365,16 @@ The yarn packager supports the following `packagerOptions`:
 |---------------|------|---------|-------------|
 | ignoreScripts | bool | true    | Do not execute package.json hook scripts on install |
 
+##### PNPM
+
+Similarly to yarn, using pnpm will switch the whole packaging pipeline to use pnpm, which uses a `pnpm-lock.yaml` file.
+
+The pnpm packager supports the following `packagerOptions`:
+
+| Option        | Type | Default | Description |
+|---------------|------|---------|-------------|
+| ignoreScripts | bool | true    | Do not execute package.json hook scripts on install |
+
 ##### Common packager options
 
 There are some settings that are common to all packagers and affect the packaging itself.
